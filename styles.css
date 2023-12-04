@@ -9,8 +9,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: rgb(27, 22, 24);
     color: azure;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .grid {
@@ -20,7 +21,13 @@ body {
     background-color: blue;
 }
 
-:hover
-.grid {
+.grid:hover {
     background-color: crimson;
+}
+
+#sizePrompt {
+    margin: 30px;
+    border: 2px solid whitesmoke;
+    border-radius: 3px;
+    padding: 15px;
 }
