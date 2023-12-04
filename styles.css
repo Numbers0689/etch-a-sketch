@@ -19,3 +19,8 @@ body {
     /* border: 0.5px solid black; */
     background-color: blue;
 }
+
+:hover
+.grid {
+    background-color: crimson;
+}
