@@ -16,10 +16,10 @@
     background-color: black;
 }
 
-.size {
+button {
     margin: 15px;
     border: 2px solid whitesmoke;
-    border-radius: 3px;
+    border-radius: 8px;
     padding: 5px 15px;
     background-color: blue;
     font-size: larger;
@@ -34,5 +34,9 @@ body {
     align-items: center;
     background-color: rgb(27, 22, 24);
     color: azure;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.buttons {
+    margin-top: 15px;
 }
