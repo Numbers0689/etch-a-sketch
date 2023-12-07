@@ -2,6 +2,7 @@ const input = document.querySelector(".size");
 const container = document.querySelector('div');
 const clear = document.querySelector('.clear');
 const color = document.querySelector('.color');
+let gridColor = "black";
 
 let sq = 32;
 gridMakes(sq);
@@ -39,7 +40,7 @@ function hoverColor() {
     const gridDiv = document.querySelectorAll('.grid');
     gridDiv.forEach(grid => {
         grid.addEventListener('mouseover', () => {
-            grid.setAttribute('style', `background-color: ${createColor()};`);
+            grid.setAttribute('style', `background-color: ${gridColor};`);
         });
     });
 };
@@ -63,3 +64,13 @@ clear.addEventListener('click', () => {
     hoverColor();
 });
 
+let isActive = false;
+color.addEventListener("click", () => {
+    isActive = !isActive;
+    if (isActive){
+        gridColor = createColor();
+    }
+    else{
+        gridColor = "black";
+    }
+})
