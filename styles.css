@@ -1,34 +1,18 @@
 #container {
-    width: 640px;
-    height: 640px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-body {
+    width: 600px;
+    height: 600px;
+    background-color: white;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    background-color: rgb(27, 22, 24);
-    color: azure;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.grid {
-    /* min-width: 10px;
-    min-height: 10px; */
-    background-color: white;
-    flex: 1 0 auto;
-    height: auto;
+#container div {
+    display: flex;
+    flex: 1;
 }
 
-.grid::before {
-    padding-top: 100%;
-    content: '';
-    display: block;
-}
 
-.grid:hover {
+.colored {
     background-color: black;
 }
 
@@ -42,4 +26,13 @@ body {
     font-weight: 900;
     color: aliceblue;
     font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(27, 22, 24);
+    color: azure;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
