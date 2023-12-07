@@ -15,19 +15,31 @@ body {
 }
 
 .grid {
-    width: 40px;
-    height: 40px;
-    /* border: 0.5px solid black; */
-    background-color: blue;
+    /* min-width: 10px;
+    min-height: 10px; */
+    background-color: white;
+    flex: 1 0 auto;
+    height: auto;
+}
+
+.grid::before {
+    padding-top: 100%;
+    content: '';
+    display: block;
 }
 
 .grid:hover {
-    background-color: crimson;
+    background-color: black;
 }
 
-#sizePrompt {
-    margin: 30px;
+.size {
+    margin: 15px;
     border: 2px solid whitesmoke;
     border-radius: 3px;
-    padding: 15px;
+    padding: 5px 15px;
+    background-color: blue;
+    font-size: larger;
+    font-weight: 900;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
 }
